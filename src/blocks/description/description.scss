@@ -1,0 +1,37 @@
+.item-description {
+    //background: url('../img/bg/description.jpg') no-repeat right top;
+    position: relative;
+    padding: 0 0 38px;
+    img {
+        float: right;
+        margin: 0 0 25px 20px;
+        & + p {
+            padding-top: 38px;
+        }
+    }
+    p {
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+@media (max-width: 640px) {
+    .item-description {
+        img {
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .item-description {
+        padding-top: 27px;
+        img {
+            display: none;
+            & + p {
+                padding-top: 0;
+            }
+        }
+    }
+}

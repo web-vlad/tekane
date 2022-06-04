@@ -1,0 +1,1 @@
+//= vendor/slick.min.js

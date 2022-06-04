@@ -1,0 +1,27 @@
+// базовые подключения
+@import 'global/vars';
+@import 'mixins';
+@import 'fonts';
+@import 'global/reset';
+@import 'global/general';
+@import "sprite";
+
+/*== begin header ==*/
+@import '../blocks/header/header';
+/*== end header ==*/
+/*== begin section premier ==*/
+@import '../blocks/premier/premier';
+/*== end section premier ==*/
+/*== begin section description ==*/
+@import '../blocks/description/description';
+/*== end section description ==*/
+/*== begin section history ==*/
+@import '../blocks/history/history';
+/*== end section history ==*/
+
+/*== begin form ==*/
+@import 'form';
+/*== end form ==*/
+/*== begin footer ==*/
+@import "../blocks/footer/footer";
+/*== end footer ==*/
