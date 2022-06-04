@@ -9,17 +9,28 @@
 //
 // At the bottom of this section, we provide information about the spritesheet itself
 // $spritesheet: width height image $spritesheet-sprites;
+$history-nav-name: 'history-nav';
+$history-nav-x: 19px;
+$history-nav-y: 25px;
+$history-nav-offset-x: -19px;
+$history-nav-offset-y: -25px;
+$history-nav-width: 9px;
+$history-nav-height: 14px;
+$history-nav-total-width: 57px;
+$history-nav-total-height: 43px;
+$history-nav-image: '../img/sprite.png';
+$history-nav: (19px, 25px, -19px, -25px, 9px, 14px, 57px, 43px, '../img/sprite.png', 'history-nav', );
 $menu-name: 'menu';
-$menu-x: 19px;
+$menu-x: 29px;
 $menu-y: 25px;
-$menu-offset-x: -19px;
+$menu-offset-x: -29px;
 $menu-offset-y: -25px;
 $menu-width: 11px;
 $menu-height: 7px;
 $menu-total-width: 57px;
 $menu-total-height: 43px;
 $menu-image: '../img/sprite.png';
-$menu: (19px, 25px, -19px, -25px, 11px, 7px, 57px, 43px, '../img/sprite.png', 'menu', );
+$menu: (29px, 25px, -29px, -25px, 11px, 7px, 57px, 43px, '../img/sprite.png', 'menu', );
 $search-2-name: 'search-2';
 $search-2-x: 0px;
 $search-2-y: 0px;
@@ -78,7 +89,7 @@ $tab: (50px, 12px, -50px, -12px, 7px, 11px, 57px, 43px, '../img/sprite.png', 'ta
 $spritesheet-width: 57px;
 $spritesheet-height: 43px;
 $spritesheet-image: '../img/sprite.png';
-$spritesheet-sprites: ($menu, $search-2, $search-cancel, $search, $tab-active, $tab, );
+$spritesheet-sprites: ($history-nav, $menu, $search-2, $search-cancel, $search, $tab-active, $tab, );
 $spritesheet: (57px, 43px, '../img/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

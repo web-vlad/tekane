@@ -1,0 +1,46 @@
+.section-world {
+    background: #faf9fa;
+    padding: 50px 0 45px;
+    .section-world__one {
+        flex: 0 0 350px;
+        max-width: 350px;
+    }
+    .section-world__second {
+        padding-left: 55px;
+    }
+}
+.world-aside {
+    .world-aside__head {
+        p {
+            text-align: justify;
+        }
+    }
+}
+.article-world {
+    background: #fff;
+    padding: 25px 30px 25px 40px;
+    .align-left {
+        float: left;
+        margin: 8px 28px 25px 0;
+    }
+    p {
+        text-align: justify;
+    }
+    a {
+        color: #c12236;
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px solid transparent;
+        @include all-transition();
+        &:hover {
+            border-color: #c12236;
+        }
+        &::after {
+            @include pseudo();
+            @include link-transition();
+        }
+    }
+    & > a {
+        line-height: 1.55;
+    }
+}

@@ -71,6 +71,35 @@ $(document).ready(function() {
 		return false;
 	});
 
+    // slider history
+    $('.history-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        rows: 0,
+        //dots: true,
+        asNavFor: '.history-sliderNav',
+        responsive: [{
+            breakpoint: 460,
+            settings: {
+                slidesToShow: 1
+            }
+        }]
+    });
+    $('.history-sliderNav').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        asNavFor: '.history-slider',
+        rows: 0,
+        focusOnSelect: true
+    });
+
+    // news slider
+    $('.news-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        rows: 0
+    });
+
 });
 
 
