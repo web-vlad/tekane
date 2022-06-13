@@ -85,8 +85,11 @@ $(document).ready(function () {
   }); // news slider
 
   $('.news-slider').slick({
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    rows: 0
+    rows: 0,
+    //autoplay: true,
+    speed: 1000
   });
 });

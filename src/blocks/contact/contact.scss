@@ -1,0 +1,53 @@
+.section-contact {
+    margin-top: 50px;
+    .section-contact__block {
+        max-width: 767px;
+        margin: 0 auto;
+    }
+    .section-contact__header {
+        text-align: center;
+        p {
+            br {
+                display: none;
+            }
+        }
+    }
+    .title {
+        margin-bottom: 34px;
+    }
+}
+@media (max-width: 767px) {
+    .section-contact {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 660px) {
+    .section-contact {
+        .section-contact__header {
+            p {
+                br {
+                    display: block;
+                }
+            }
+        }
+        .title {
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 460px) {
+    .section-contact {
+        margin-top: 19px;
+        .title {
+            margin-bottom: 16px;
+        }
+        .section-contact__header {
+            p {
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

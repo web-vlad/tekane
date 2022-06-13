@@ -1,0 +1,209 @@
+.footer {
+    background: #2b2b2b;
+    padding: 62px 0 32px;
+    margin-top: 88px;
+    .row {
+        justify-content: space-between;
+    }
+    .footer__text {
+        flex: 0 0 100%;
+    }
+    .footer__logo {
+        flex: 0 0 340px;
+        max-width: 340px;
+        display: flex;
+        //align-items: center;
+        .logo--footer {
+            flex: 0 0 60px;
+            max-width: 60px;
+        }
+        .footer-info {
+            padding-left: 27px;
+        }
+    }
+    .footer__text {
+        margin-top: 34px;
+        p {
+            font-size: 1.1rem;
+            color: #959595;
+            line-height: 1.8;
+        }
+    }
+}
+.copy {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.065rem;
+    display: block;
+    line-height: 1.45;
+    margin-bottom: 11px;
+}
+.block-social {
+    display: flex;
+    li {
+        margin-left: 30px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    a {
+        @include all-transition();
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 2px;
+    li {
+        margin-left: 20px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    a {
+        font-weight: 700;
+        color: #fff;
+        @include link-transition();
+        &:hover {
+            color: #ef3e56;
+        }
+    } 
+}
+.footer-studio {
+    font-size: 1.1rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 44px;
+    a {
+        color: #fff;
+        @include link-transition();
+        &:hover {
+            color: #ef3e56;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .footer-menu {
+        display: block;
+        margin-top: 0;
+        li {
+            margin-left: 0;
+            text-align: right;
+            margin-bottom: 6px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        a {
+            display: inline-block;
+            padding: 3px 0;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .footer {
+        padding: 40px 0 22px;
+        margin-top: 57px;
+    }
+}
+@media (max-width: 680px) {
+    .footer {
+        .footer__text {
+            margin-top: 29px;
+            p {
+                font-size: 1rem;
+                line-height: 1.4;
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .footer-menu {
+        li {
+            margin-bottom: 1px;
+        }
+        a {
+            font-size: 1.1rem;
+        }
+    }
+    .footer-studio {
+        margin-top: 27px;
+    }    
+}
+@media (max-width: 575px) {
+    .footer {
+        margin-top: 45px;
+        .footer__nav {
+            order: 1;
+            margin-top: 7px;
+        }
+        .footer__logo {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    .footer-menu {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        li {
+            text-align: center;
+            margin: 0 10px 10px 10px;
+        }
+        a {
+            font-size: 1.1rem;
+        }
+    }
+}
+@media (max-width: 420px) {
+    .footer {
+        padding-top: 28px;
+        margin-top: 23px;
+        .footer__text {
+            margin-top: 24px;
+            p {
+                font-size: 0.9rem;
+                margin-bottom: 12px;
+            }
+        }
+        .footer__nav {
+            margin-top: 5px;
+        }
+    }
+    .footer-menu {
+        li {
+            margin: 0 10px 3px 10px;
+        }
+        a {
+            font-size: 1rem;
+        }
+    }
+    .footer-studio {
+        font-size: 1rem;
+        margin-top: 13px;
+    }
+}
+@media (max-width: 355px) {
+    .footer {
+        .footer__logo {
+            .logo--footer {
+                flex: 0 0 45px;
+                max-width: 45px;
+            }
+            .footer-info {
+                padding-left: 15px;
+            }
+        }
+    }
+    .copy {
+        font-size: 1rem;
+    }
+    .block-social li {
+        margin-left: 20px;
+    }
+}

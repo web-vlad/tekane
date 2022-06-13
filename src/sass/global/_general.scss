@@ -60,9 +60,6 @@ img {
     padding-right: 15px;
     padding-left: 15px;       
 }
-.hide {
-    display: none;
-}
 .bg-1 {
     background: #fbfbfb;
 }
@@ -77,7 +74,7 @@ img {
     margin-bottom: 25px;
 }
 .title {
-    font-weight: 700;
+    font-weight: normal;
     font-size: 3.6rem;
     font-family: 'Playfair Display Bold', serif;
     color: #BE2C37;
@@ -112,9 +109,12 @@ img {
         color: #fff;
     }
 }
+.hide {
+    display: none;
+}
 @media (max-width: 767px) {
     p {
         font-size: 1.2rem;
-        line-height: 1.4;
+        line-height: 1.35;
     }
 }

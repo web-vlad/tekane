@@ -62,7 +62,7 @@
         width: 36px;
         height: 36px;
         text-align: center;
-        line-height: 36px;
+        line-height: 37px;
         top: 80px;
         border: none;
         border-radius: 50%;
@@ -85,12 +85,14 @@
         left: 0;
         &::after {
             background-image: url('../img/prev.png');
+            margin-right: 2px;
         }
     }
     .slick-next {
         right: 0;
         &::after {
             background-image: url('../img/next.png');
+            margin-left: 2px;
         }
     }
 }
@@ -270,7 +272,7 @@
         .slick-arrow {
             width: 25px;
             height: 25px;
-            line-height: 25px;
+            line-height: 26px;
             &::after {
                 width: 9px;
                 height: 14px;
